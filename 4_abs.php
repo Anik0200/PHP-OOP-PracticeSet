@@ -1,0 +1,19 @@
+<?php
+
+abstract class Person
+{
+    public $name;
+    abstract protected function Info($n);
+}
+
+class Dr extends Person
+{
+    public function Info($n)
+    {
+        $this->name = $n;
+        return $this->name;
+    } 
+}
+
+$Dr = new Dr;
+echo $Dr->Info("Anik");
