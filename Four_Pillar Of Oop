@@ -20,8 +20,19 @@ echo $Dr->Info("Anik");
 
 2, Encapsulation ---------------
 
+xxxxxxx
+
+3, Inheritance ---------------
+
+class Manager {
+
+}
+
+class Manager extends Employe{
+
+}
+
+4, Polymorphism ---------------
 
 
 
-3, Inheritance
-4, Polymorphism
