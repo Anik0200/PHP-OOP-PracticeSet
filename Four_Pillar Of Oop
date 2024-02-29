@@ -32,7 +32,8 @@ xxxxxxx
 
 Inheritance in OOP = When a class derives 
 from another class.
-An inherited class is defined by using the extends keyword.
+An inherited class is defined by 
+using the extends keyword.
 
 class Manager {
 
