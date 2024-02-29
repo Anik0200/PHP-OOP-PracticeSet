@@ -95,29 +95,29 @@ the methods described in
 the specified interface. 
 This is called polymorphism.
 
-interface A
+interface Animal
 {
-    public function hi();  //abstract 
+    public function makeSound();
 }
 
-interface B
+class Cat implements Animal
 {
-    public function hello(); //abstract 
-}
-
-class C implements A, B
-{
-    public function hi()
+    public function makeSound()
     {
-        echo "HI";
-    }
-
-    public function hello()
-    {
-        echo "HELLO";
+        echo " Meow ";
     }
 }
 
-$cmn = new C;
-$cmn->hi();
-$cmn->hello();
+class Dog implements Animal
+{
+    public function makeSound()
+    {
+        echo " Bhau ";
+    }
+}
+
+$cat = new Cat;
+$cat->makeSound();
+
+$dog = new Dog;
+$dog->makeSound();
