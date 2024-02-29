@@ -1,4 +1,4 @@
-1, Abstraction ---------------
+         -------------- Abstraction --------------
 
 Abstraction is a concept in which 
 a class has methods without implementation. 
@@ -24,7 +24,7 @@ class Dr extends Person
 $Dr = new Dr;
 echo $Dr->Info("Anik");
 
-2, Encapsulation ---------------
+         -------------- Polymorphism --------------
 
 The implements keyword is used to 
 declare that a class must have 
@@ -32,7 +32,32 @@ the methods described in
 the specified interface. 
 This is called polymorphism.
 
+interface A
+{
+    public function hi();  //abstract 
+}
 
+interface B
+{
+    public function hello(); //abstract 
+}
+
+class C implements A, B
+{
+    public function hi()
+    {
+        echo "HI";
+    }
+
+    public function hello()
+    {
+        echo "HELLO";
+    }
+}
+
+$cmn = new C;
+$cmn->hi();
+$cmn->hello();
 
 3, Inheritance ---------------
 
