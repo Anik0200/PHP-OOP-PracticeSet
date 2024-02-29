@@ -1,4 +1,4 @@
-         -------------- Abstraction --------------
+-------------- Abstraction --------------
 
 Abstraction is a concept in which 
 a class has methods without implementation. 
@@ -24,57 +24,7 @@ class Dr extends Person
 $Dr = new Dr;
 echo $Dr->Info("Anik");
 
-         -------------- Polymorphism --------------
-
-The implements keyword is used to 
-declare that a class must have 
-the methods described in 
-the specified interface. 
-This is called polymorphism.
-
-interface A
-{
-    public function hi();  //abstract 
-}
-
-interface B
-{
-    public function hello(); //abstract 
-}
-
-class C implements A, B
-{
-    public function hi()
-    {
-        echo "HI";
-    }
-
-    public function hello()
-    {
-        echo "HELLO";
-    }
-}
-
-$cmn = new C;
-$cmn->hi();
-$cmn->hello();
-
-3, Inheritance ---------------
-
-Inheritance in OOP = When a class derives 
-from another class.
-An inherited class is defined by 
-using the extends keyword.
-
-class Manager {
-
-}
-
-class Manager extends Employe{
-
-}
-
-4, Encapsulation ---------------
+-------------- Encapsulation --------------
 
 Encapsulation can be used 
 if the properties of the object are private 
@@ -123,7 +73,52 @@ $car->setYear(2022);
 echo "Updated Year: " . $car->getYear() . "\n";
 ?>
 
+-------------- Inheritance --------------
 
+Inheritance in OOP = When a class derives 
+from another class.
+An inherited class is defined by 
+using the extends keyword.
 
+class Manager {
 
+}
 
+class Manager extends Employe{
+
+}
+
+-------------- Polymorphism --------------
+
+The implements keyword is used to 
+declare that a class must have 
+the methods described in 
+the specified interface. 
+This is called polymorphism.
+
+interface A
+{
+    public function hi();  //abstract 
+}
+
+interface B
+{
+    public function hello(); //abstract 
+}
+
+class C implements A, B
+{
+    public function hi()
+    {
+        echo "HI";
+    }
+
+    public function hello()
+    {
+        echo "HELLO";
+    }
+}
+
+$cmn = new C;
+$cmn->hi();
+$cmn->hello();
