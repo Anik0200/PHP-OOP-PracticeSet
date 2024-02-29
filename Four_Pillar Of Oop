@@ -1,9 +1,27 @@
-1, Abstraction
+1, Abstraction ---------------
+
+abstract class Person
+{
+    public $name;
+    abstract protected function Info($n);
+}
+
+class Dr extends Person
+{
+    public function Info($n)
+    {
+        $this->name = $n;
+        return $this->name;
+    } 
+}
+
+$Dr = new Dr;
+echo $Dr->Info("Anik");
+
+2, Encapsulation ---------------
 
 
 
 
-
-2, Encapsulation
 3, Inheritance
 4, Polymorphism
