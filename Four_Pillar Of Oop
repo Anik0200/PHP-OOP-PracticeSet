@@ -1,29 +1,3 @@
--------------- Abstraction --------------
-
-Abstraction is a concept in which 
-a class has methods without implementation. 
-The idea is to have a template 
-and let the child class that inherits 
-the parent class implement the method.
-
-abstract class Person
-{
-    public $name;
-    abstract protected function Info($n);
-}
-
-class Dr extends Person
-{
-    public function Info($n)
-    {
-        $this->name = $n;
-        return $this->name;
-    } 
-}
-
-$Dr = new Dr;
-echo $Dr->Info("Anik");
-
 -------------- Encapsulation --------------
 
 Encapsulation can be used 
@@ -71,7 +45,32 @@ $car->setYear(2022);
 
 // Display the updated year
 echo "Updated Year: " . $car->getYear() . "\n";
-?>
+
+-------------- Abstraction --------------
+
+Abstraction is a concept in which 
+a class has methods without implementation. 
+The idea is to have a template 
+and let the child class that inherits 
+the parent class implement the method.
+
+abstract class Person
+{
+    public $name;
+    abstract protected function Info($n);
+}
+
+class Dr extends Person
+{
+    public function Info($n)
+    {
+        $this->name = $n;
+        return $this->name;
+    } 
+}
+
+$Dr = new Dr;
+echo $Dr->Info("Anik");
 
 -------------- Inheritance --------------
 
