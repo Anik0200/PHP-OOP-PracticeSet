@@ -1,6 +1,7 @@
 1, Abstraction ---------------
 
-Abstraction is a concept in which a class has methods without implementation. The idea is to have a template and let the child class that inherits the parent class implement the method.
+Abstraction is a concept in which a class has methods without implementation. The idea is to have a template 
+and let the child class that inherits the parent class implement the method.
 
 abstract class Person
 {
