@@ -40,5 +40,11 @@ class Manager extends Employe{
 
 4, Polymorphism ---------------
 
+Encapsulation can be used 
+if the properties of the object are private 
+and updating them through public methods.
+
+
+
 
 
