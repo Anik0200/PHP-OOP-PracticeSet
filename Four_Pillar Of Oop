@@ -26,7 +26,13 @@ echo $Dr->Info("Anik");
 
 2, Encapsulation ---------------
 
-xxxxxxx
+The implements keyword is used to 
+declare that a class must have 
+the methods described in 
+the specified interface. 
+This is called polymorphism.
+
+
 
 3, Inheritance ---------------
 
